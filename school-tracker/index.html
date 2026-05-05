@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>School Tracker</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>🏫 School Result & Attendance Tracke</h1>
+    </header>
+    <main>
+      <section id="add-student">
+        <h1>Add New Student</h1>
+        <input type="text" placeholder="Student Full Name" id="student-name">
+        <input type="number" placeholder="Age" id="student-age">
+        <input type="text" placeholder="Grade (e.g Grade 5)" id="grade-level">
+        <button id="add-btn">Add Student</button>
+      </section>
+      <section id="search-section">
+        <input type="text" id="search-input" placeholder="🔍 Search student...">
+      </section>      
+      <section id="student-list">
+        <h2>Student List</h2>
+        <table>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gread</th>
+            <th>Average Score</th>
+            <th>Status</th>
+            <th>Attendance</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+          <tbody id="student-table-body">
+              <!-- Students will appear here -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
